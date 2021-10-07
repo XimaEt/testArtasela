@@ -2,7 +2,7 @@
 
 ## Info db: 
 
-Host : 'localhost',
+Host : 'localhost', \n
 DBname : 'artasela',
 User : 'user',
 Password : '';
