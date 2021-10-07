@@ -15,7 +15,7 @@ $(document).ready(() => {
 
         $.post('insert.php', {civility:civility,firstname:firstname,lastname:lastname,email:email,address:address,city:city,country:country,zip:zip,job:job,message:message}, (info) => {
             $('.return').html(info).slideDown();
-            $('.civility').val('');
+            $('.civility').prop('checked', false);
             $('.firstname').val('');
             $('.lastname').val('');
             $('.email').val('');
