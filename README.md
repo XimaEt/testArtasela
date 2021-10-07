@@ -2,7 +2,12 @@
 
 ## Info db: 
 
-Host : 'localhost', \n
+Host : 'localhost',
+
 DBname : 'artasela',
+
 User : 'user',
+
 Password : '';
+
+Table : 'contacts'; Structure -> structure_table.png
