@@ -24,18 +24,14 @@ try {
     $job = $_POST['job'];
     $message = $_POST['message'];
     
-    $add = "INSERT INTO contacts(civility, firstname, lastname, email, address, zip, city, country, job, message) VALUES ('$civility', '$firstname', '$lastname', '$email', '$address', '$zip', '$city', '$country', '$job', '$message')";
+    $add = "INSERT INTO contacts(civility, firstname, lastname, email, address, zip, city, country, job, message) VALUES (\"$civility\", \"$firstname\", \"$lastname\", \"$email\", \"$address\", \"$zip\", \"$city\", \"$country\", \"$job\", \"$message\")";
     $pdo->exec($add);    
-        // echo "<span class=\"success\">Votre requête est bien envoyée.</span>";
         echo "<script>alert(\"Votre requête est bien envoyée.\")</script>";
         }
         catch(PDOException $e) {
             echo $e->getMessage();
         }
     } else {
-        // echo "<span class=\"error\" >Veuillez completer tous les champs</span>";
         echo "<script>alert(\"Veuillez completer tous les champs\")</script>";
     }
-    
-
     ?>
